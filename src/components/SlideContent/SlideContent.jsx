@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './SlideContent.css'
+import PropTypes from 'prop-types'
 
 class SlideContent extends Component {
     constructor(props) {
@@ -20,3 +21,8 @@ class SlideContent extends Component {
 }
 
 export default SlideContent
+
+SlideContent.propTypes = {
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired
+}

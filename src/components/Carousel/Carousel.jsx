@@ -52,7 +52,7 @@ class Carousel extends Component {
                 <div className="carousel-div">
                     <Swiper {...params}>
                         {slides.map(slide => 
-                        <section className="slide" style={{
+                        <section className="slide" key={slide.Title} style={{
                             height: "440px",
                             width: "1600px",
                             backgroundSize: 'cover',
