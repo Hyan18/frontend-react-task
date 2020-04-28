@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Swiper from 'react-id-swiper';
 
 class Carousel extends Component {
     constructor(props) {
@@ -24,6 +25,20 @@ class Carousel extends Component {
     render () {
         const { isLoading, slides } = this.state
 
+        const params = {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev'
+            }
+        }
+
         if (isLoading) {
             return (
                 <div className="carousel-div">
@@ -33,7 +48,12 @@ class Carousel extends Component {
         } else {
             return (
                 <div className="carousel-div">
-                    {slides[0].Title}
+                    <Swiper {...params}>
+                        {slides.map(slide => 
+                        <section style={{ height: "440px", width: "1600px", backgroundImage: `url("${slide.ImageUrl}")`, backgroundSize: 'cover', backgroundRepeat: "no-repeat", backgroundPosition: "center"}}>
+                            
+                        </section>)}
+                    </Swiper>
                 </div>
             )
         }
