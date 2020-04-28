@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import Swiper from 'react-id-swiper';
+import Swiper from 'react-id-swiper'
+import './Carousel.css'
+import SlideContent from '../SlideContent/SlideContent'
 
 class Carousel extends Component {
     constructor(props) {
@@ -50,8 +52,15 @@ class Carousel extends Component {
                 <div className="carousel-div">
                     <Swiper {...params}>
                         {slides.map(slide => 
-                        <section style={{ height: "440px", width: "1600px", backgroundImage: `url("${slide.ImageUrl}")`, backgroundSize: 'cover', backgroundRepeat: "no-repeat", backgroundPosition: "center"}}>
-                            
+                        <section className="slide" style={{
+                            height: "440px",
+                            width: "1600px",
+                            backgroundSize: 'cover',
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
+                            backgroundImage: `linear-gradient(to right, rgb(51, 51, 51, 1), rgba(255,0,0,0) 75%), url("${slide.ImageUrl}")`
+                        }}>
+                            <SlideContent title={slide.Title} subtitle={slide.Subtitle}/>
                         </section>)}
                     </Swiper>
                 </div>
