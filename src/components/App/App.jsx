@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Carousel from '../Carousel/Carousel'
+import Navbar from '../Navbar/Navbar'
 
 class App extends Component {
     constructor(props) {
@@ -9,6 +10,7 @@ class App extends Component {
     render () {
         return (
             <div className='app-div'>
+                <Navbar/>
                 <Carousel/>
             </div>
         )

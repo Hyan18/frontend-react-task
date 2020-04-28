@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Swiper from 'react-id-swiper'
-import './Carousel.css'
 import SlideContent from '../SlideContent/SlideContent'
+import './Carousel.css'
 
 class Carousel extends Component {
     constructor(props) {

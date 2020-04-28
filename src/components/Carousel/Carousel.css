@@ -1,7 +1,4 @@
-section.slide {
+.carousel-div {
     height: 440px;
     width: 1600px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
