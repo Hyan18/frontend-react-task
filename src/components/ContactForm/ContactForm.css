@@ -14,7 +14,7 @@ form input, textarea {
     margin: 10px 20px 10px 0px;
 }
 
-#phoneNumber {
+#phoneNumber, #companyName {
     height: 40px;
     width: 510px;
     font-size: 100%;
