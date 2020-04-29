@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './ContactForm.css'
 import axios from 'axios'
-import Submit from '../../img/Icon_Submit.svg'
 
 class ContactForm extends Component {
     constructor(props) {

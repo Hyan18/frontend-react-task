@@ -23,10 +23,10 @@ function Navbar () {
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/about">About us</Link>
+                        <Link to="/about-us">About us</Link>
                     </li>
                     <li>
-                        <Link to="/contact">Contact us</Link>
+                        <Link to="/contact-us">Contact us</Link>
                     </li>
                     <li>
                         <Link>Log in</Link>
@@ -38,10 +38,10 @@ function Navbar () {
                 <Route exact={true} path="/">
                     <Home/>
                 </Route>
-                <Route path="/about">
+                <Route path="/about-us">
                     <About/>
                 </Route>
-                <Route path="/contact">
+                <Route path="/contact-us">
                     <Contact/>
                 </Route>
             </Switch>
