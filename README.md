@@ -3,6 +3,16 @@
 Tasked with replicating a webpage design.
 Time taken: 9 hours over 3 days
 
+## Installation
+
+```
+git clone git@github.com:Hyan18/frontend-react-task.git
+cd frontend-react-task
+yarn install
+yarn start
+```
+The browser should start up automatically, otherwise, navigate to ```localhost:3000```
+
 ### Completed
 - Navbar with logo
 - Homepage carousel calling api
