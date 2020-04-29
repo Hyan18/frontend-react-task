@@ -14,18 +14,28 @@ class Carousel extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://interview-assessment.api.avamae.co.uk/api/v1/home/banner-details')
-          .then(
-            (response) => {
-                this.setState({
-                    isLoading: false,
-                    slides: response.data.Details,
+        this.get('https://interview-assessment.api.avamae.co.uk/api/v1/home/banner-details')
+    }
+
+    get(url = 'https://interview-assessment.api.avamae.co.uk/api/v1/home/banner-details') {
+        axios.get(url)
+            .then(
+                (response) => {
+                    this.setState({
+                        isLoading: false,
+                        slides: response.data.Details,
+                    })
+                },
+                (error) => {
+                    this.setState({
+                        isLoading: false,
+                        error
+                    })
                 })
-            })
     }
 
     render () {
-        const { isLoading, slides } = this.state
+        const { isLoading, slides, error } = this.state
 
         const params = {
             slidesPerView: 1,
@@ -41,7 +51,13 @@ class Carousel extends Component {
             }
         }
 
-        if (isLoading) {
+        if (error) {
+            return (
+                <div className="carousel-div">
+                    Error: {error.message}
+                </div>
+            )
+        } else if (isLoading) {
             return (
                 <div className="carousel-div">
                     <span>Loading...</span>
