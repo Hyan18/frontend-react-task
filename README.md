@@ -13,13 +13,13 @@ yarn start
 ```
 The browser should start up automatically, otherwise, navigate to ```localhost:3000```
 
-### Completed
+## Completed
 - Navbar with logo
 - Homepage carousel calling api
 - Contact us form calling post request
 - Routing
 
-### To Be Done
+## To Be Done
 - A lot of styling (navbar links, homepage, contact us form, contact us logo, buttons)
 - Rest of homepage
 - About us page
