@@ -43,3 +43,42 @@ form input, textarea {
     height: 40px;
     width: 110px;
 }
+
+.form-success {
+    background-color: #E9F4DA;
+    height: 160px;
+    width: 510px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#success-content {
+    padding-top: 30px;
+}
+
+.circle {
+    background-color: #8EC73D;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+#valid-tick {
+    height: 25px;
+    width: 25px;
+    padding-top: 8px;
+}
+
+#success-title {
+    font-size: 16px;
+}
+
+#success-subtitle {
+    padding-top: 5px;
+    font-size: 12px;
+    font-weight: lighter;
+}

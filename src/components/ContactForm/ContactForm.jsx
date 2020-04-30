@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './ContactForm.css'
 import axios from 'axios'
+import Valid from '../../img/Icon_Valid.svg'
 
 class ContactForm extends Component {
     constructor(props) {
@@ -75,7 +76,20 @@ class ContactForm extends Component {
         if (submitted) {
             return (
                 <div className='contact-form-div'>
-                    Successfully submitted
+                    <div className='form-success'>
+                        <div id='success-content'>
+                            <div className='circle'>
+                                <img id='valid-tick' src={Valid}/>
+                            </div>
+                            <div id='success-title'>
+                                Your message has been sent
+                            </div>
+                            <div id='success-subtitle'>
+                                We will be in contact with you within 24 hours.
+                            </div>
+                        </div>
+                            
+                    </div>
                 </div>
             )
         } else {
