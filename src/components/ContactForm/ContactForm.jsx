@@ -79,7 +79,7 @@ class ContactForm extends Component {
                     <div className='form-success'>
                         <div id='success-content'>
                             <div className='circle'>
-                                <img id='valid-tick' src={Valid}/>
+                                <img id='valid-tick' src={Valid} alt=''/>
                             </div>
                             <div id='success-title'>
                                 Your message has been sent

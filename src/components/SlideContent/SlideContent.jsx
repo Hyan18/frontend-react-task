@@ -3,9 +3,6 @@ import './SlideContent.css'
 import PropTypes from 'prop-types'
 
 class SlideContent extends Component {
-    constructor(props) {
-        super(props)
-    }
 
     render () {
         const { title, subtitle } = this.props

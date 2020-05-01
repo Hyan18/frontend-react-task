@@ -17,7 +17,7 @@ function Navbar () {
             <div className="navbar">
                 <ul id="items">
                     <li className="logo">
-                        <a href="#"><img src={Logo}/></a>
+                        <a href="/"><img src={Logo} alt=''/></a>
                     </li>
                     <li>
                         <Link to="/">Home</Link>
