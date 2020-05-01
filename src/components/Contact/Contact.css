@@ -5,6 +5,16 @@
 }
 
 .contact-content {
-    padding: 60px 250px 0px 250px;
+    padding: 50px 250px 0px 250px;
     width: 520px;
+}
+
+#title {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 12px;
+    line-height: 20px;
 }

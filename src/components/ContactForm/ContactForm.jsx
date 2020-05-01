@@ -38,7 +38,6 @@ class ContactForm extends Component {
     
     handleSubmit(event) {
         event.preventDefault()
-        console.log(this.state)
         axios.post('https://interview-assessment.api.avamae.co.uk/api/v1/contact-us/submit', {
             "FullName": this.state.fullName,
             "EmailAddress": this.state.emailAddress,
@@ -67,11 +66,34 @@ class ContactForm extends Component {
             this.setState({
                 submitted: true
             })
+        } else {
+            const error_messages = data.Errors.map ( e => this.errorToMessage(e) )
+            this.setState({
+                hasError: true,
+                errors: error_messages
+            })
+        }
+    }
+
+    errorToMessage(error) {
+        switch (error.MessageCode) {
+            case 'Required':
+                 return `${error.FieldName} is required`
+            case 'Invalid_Email_Address':
+                return 'Email address is invalid'
+            case 'Invalid_Phone_Number':
+                return 'Phone number is invalid'
+            case 'Max_Length_Exceeded':
+                return 'The message provided exceeds the maximum length allowed'
+            case 'Invalid_Postcode':
+                return 'Not a valid UK postcode'
+            case 'Server_Error':
+                return 'Unexpected server error occurred'
         }
     }
 
     render () {
-        const { includeAddressDetails, submitted } = this.state
+        const { includeAddressDetails, submitted, hasError, errors } = this.state
 
         if (submitted) {
             return (
@@ -95,6 +117,11 @@ class ContactForm extends Component {
         } else {
             return (
                 <div className='contact-form-div'>
+                    {hasError &&
+                    <div id='errors'>
+                        {errors.map(e => <p>{e}</p>)}
+                    </div>
+                    }
                     <form onSubmit={this.handleSubmit}>
                         <div className='inlineInputs'>
                             <label>

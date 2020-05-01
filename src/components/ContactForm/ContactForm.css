@@ -82,3 +82,11 @@ form input, textarea {
     font-size: 12px;
     font-weight: lighter;
 }
+
+#errors {
+    background-color: #F2DEDE;
+    border-radius: 5px;
+    padding: 3px 0px 3px 10px;
+    color: rgb(194, 83, 68);
+    margin-bottom: 10px;
+}
