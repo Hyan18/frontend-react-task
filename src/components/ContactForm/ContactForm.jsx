@@ -147,6 +147,7 @@ class ContactForm extends Component {
                         </div>
                         <label>
                             Phone number
+                            <p className='optionalInput'> - optional</p>
                             <input
                                 id="phoneNumber"
                                 name="phoneNumber"
@@ -164,7 +165,10 @@ class ContactForm extends Component {
                                 onChange={this.handleChange} />
                         </label>
                         <label>
-                            Message
+                            <p className='alignleft'>Message</p>
+                            <p className='alignright' id='msg_max_length'>
+                                Maximum text length is 500 characters
+                            </p>
                             <textarea
                                 id="message"
                                 name="message"
@@ -197,6 +201,7 @@ class ContactForm extends Component {
                                 </label>
                                 <label>
                                     Address line 2
+                                    <p className='optionalInput'> - optional</p>
                                     <input
                                     id="addressLine2"
                                     name="addressLine2"

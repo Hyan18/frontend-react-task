@@ -1,3 +1,8 @@
+body {
+    font-size: 12px;
+    color: #323232;
+}
+
 .inlineInputs {
     display: flex;
     flex-direction: row;
@@ -92,4 +97,22 @@ form input, textarea {
     padding: 3px 0px 3px 10px;
     color: rgb(194, 83, 68);
     margin-bottom: 10px;
+}
+
+.optionalInput {
+    display: inline;
+    font-style: italic;
+    color: grey;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+#msg_max_length {
+    color: grey;
+    font-size: 10px;
 }
