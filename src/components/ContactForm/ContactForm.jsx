@@ -89,6 +89,8 @@ class ContactForm extends Component {
                 return 'Not a valid UK postcode'
             case 'Server_Error':
                 return 'Unexpected server error occurred'
+            default:
+                return 'Unknown error'
         }
     }
 
