@@ -75,7 +75,7 @@ form input, textarea {
     margin-bottom: 15px;
 }
 
-#valid-tick {
+#icon-valid {
     height: 25px;
     width: 25px;
     padding-top: 8px;
@@ -115,4 +115,24 @@ form input, textarea {
 #msg_max_length {
     color: grey;
     font-size: 10px;
+}
+
+#form-submit {
+    background-color: #2685C6;
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    width: 510px;
+    color: white;
+    font-weight: bold;
+}
+
+#icon-submit {
+    height: 18px;
+    width: 18px;
+    padding: 10px 0px 0px 5px;
+}
+
+#text-submit {
+    font-size: 11px;
 }

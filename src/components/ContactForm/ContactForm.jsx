@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import './ContactForm.css'
 import axios from 'axios'
-import Valid from '../../img/Icon_Valid.svg'
+import iconValid from '../../img/Icon_Valid.svg'
+import iconSubmit from '../../img/Icon_Submit.svg'
 
 class ContactForm extends Component {
     constructor(props) {
@@ -103,7 +104,7 @@ class ContactForm extends Component {
                     <div className='form-success'>
                         <div id='success-content'>
                             <div className='circle'>
-                                <img id='valid-tick' src={Valid} alt=''/>
+                                <img id='icon-valid' src={iconValid} alt=''/>
                             </div>
                             <div id='success-title'>
                                 Your message has been sent
@@ -121,7 +122,7 @@ class ContactForm extends Component {
                 <div className='contact-form-div'>
                     {hasError &&
                     <div id='errors'>
-                        {errors.map(e => <p>{e}</p>)}
+                        {errors.map(e => <p key='e'>{e}</p>)}
                     </div>
                     }
                     <form onSubmit={this.handleSubmit}>
@@ -250,7 +251,10 @@ class ContactForm extends Component {
                             </div>
                         </div>
                         }
-                        <input type="submit" value="Submit" />
+                        <button id="form-submit" type="submit">
+                            <img id="icon-submit" className="alignleft" src={iconSubmit} alt=''/>
+                            <p id="text-submit">Submit</p>
+                        </button>
                     </form>
                 </div>
             )
