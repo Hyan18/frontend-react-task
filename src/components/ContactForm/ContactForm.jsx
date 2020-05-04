@@ -148,7 +148,7 @@ class ContactForm extends Component {
                         </div>
                         <label>
                             Phone number
-                            <p className='optionalInput'> - optional</p>
+                            <div className='optionalInput'> - optional</div>
                             <input
                                 id="phoneNumber"
                                 name="phoneNumber"
@@ -202,7 +202,7 @@ class ContactForm extends Component {
                                 </label>
                                 <label>
                                     Address line 2
-                                    <p className='optionalInput'> - optional</p>
+                                    <div className='optionalInput'> - optional</div>
                                     <input
                                     id="addressLine2"
                                     name="addressLine2"

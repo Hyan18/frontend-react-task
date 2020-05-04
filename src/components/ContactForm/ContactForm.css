@@ -8,9 +8,9 @@ body {
     flex-direction: row;
 }
 
-#fullName, #emailAddress {
+#fullName, #emailAddress, #addressLine1, #addressLine2 {
     height: 40px;
-    width: 240px;
+    width: 243px;
     font-size: 100%;
 }
 
@@ -40,11 +40,6 @@ form input, textarea {
 
 #addAddressDetails {
     margin: 10px 20px 10px 10px;
-}
-
-#addressLine1, #addressLine2 {
-    height: 40px;
-    width: 240px;
 }
 
 #cityOrTown, #stateOrCounty, #postcode, #country {
@@ -122,9 +117,10 @@ form input, textarea {
     border: none;
     border-radius: 3px;
     height: 40px;
-    width: 510px;
+    width: 520px;
     color: white;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 #icon-submit {
