@@ -21,10 +21,12 @@ class ContactForm extends Component {
             postcode: '',
             country: '',
             submitted: false,
+            phoneNumberCount: 1,
         }
 
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleAddPhoneNumber = this.handleAddPhoneNumber.bind(this)
     }
 
     handleChange(event) {
@@ -95,8 +97,23 @@ class ContactForm extends Component {
         }
     }
 
+    handleAddPhoneNumber(event) {
+        event.preventDefault()
+
+        this.setState( (prevState) => {
+            return {phoneNumberCount: prevState.phoneNumberCount + 1}
+        })
+
+    }
+
     render () {
-        const { includeAddressDetails, submitted, hasError, errors } = this.state
+        const { includeAddressDetails, submitted, hasError, errors, phoneNumberCount } = this.state
+
+        var additionalPhoneNumbers = []
+
+        for (var i = 1; i < (phoneNumberCount); i++) {
+            additionalPhoneNumbers.push(<PhoneNumberInput key={i+1} n={i+1}/>)
+        }
 
         if (submitted) {
             return (
@@ -147,15 +164,20 @@ class ContactForm extends Component {
                             </label>
                         </div>
                         <label>
-                            Phone number
+                            Phone number 01
                             <div className='optionalInput'> - optional</div>
                             <input
-                                id="phoneNumber"
+                                className="phone-number"
                                 name="phoneNumber"
                                 type="text"
                                 value={this.state.phoneNumber}
                                 onChange={this.handleChange} />
                         </label>
+                        {/* should this be unlimited phone numbers that can be added? */}
+                        {additionalPhoneNumbers}
+                        <button id="add-phone-number" onClick={this.handleAddPhoneNumber}>
+                            Add new phone number
+                        </button>
                         <label>
                             Company name
                             <input
@@ -263,3 +285,13 @@ class ContactForm extends Component {
 }
 
 export default ContactForm
+
+const PhoneNumberInput = props => (
+    <label>
+        Phone number 0{props.n}
+        <div className='optionalInput'> - optional</div>
+        <input
+            className="phone-number"
+            type="text" />
+    </label>
+)

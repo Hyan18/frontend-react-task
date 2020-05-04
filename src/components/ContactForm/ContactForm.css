@@ -22,7 +22,13 @@ form input, textarea {
     border-radius: 3px;
 }
 
-#phoneNumber, #companyName {
+.phone-number {
+    height: 40px;
+    width: 510px;
+    font-size: 100%;
+}
+
+#companyName {
     height: 40px;
     width: 510px;
     font-size: 100%;
@@ -132,4 +138,16 @@ form input, textarea {
 
 #text-submit {
     font-size: 11px;
+}
+
+#add-phone-number {
+    background-color: #EFF7FF;
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    width: 520px;
+    color: #6597C7;
+    font-weight: bold;
+    font-size: 11px;
+    margin: 10px 0px 20px 0px;
 }
