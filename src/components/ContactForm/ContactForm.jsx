@@ -3,6 +3,7 @@ import './ContactForm.css'
 import axios from 'axios'
 import iconValid from '../../img/Icon_Valid.svg'
 import iconSubmit from '../../img/Icon_Submit.svg'
+import PropTypes from 'prop-types'
 
 class ContactForm extends Component {
     constructor(props) {
@@ -295,3 +296,7 @@ const PhoneNumberInput = props => (
             type="text" />
     </label>
 )
+
+PhoneNumberInput.propTypes = {
+    n: PropTypes.number.isRequired
+}
