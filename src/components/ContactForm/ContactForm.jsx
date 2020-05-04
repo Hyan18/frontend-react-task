@@ -143,11 +143,11 @@ class ContactForm extends Component {
                     </div>
                     }
                     <form onSubmit={this.handleSubmit}>
-                        <div className='inlineInputs'>
+                        <div className='inline-inputs'>
                             <label>
                                 Full name
                                 <input
-                                    id="fullName"
+                                    id="full-name"
                                     name="fullName"
                                     type="text"
                                     value={this.state.fullName}
@@ -156,7 +156,7 @@ class ContactForm extends Component {
                             <label>
                                 Email address
                                 <input
-                                    id="emailAddress"
+                                    id="email-address"
                                     name="emailAddress"
                                     type="text"
                                     value={this.state.emailAddress}
@@ -165,7 +165,7 @@ class ContactForm extends Component {
                         </div>
                         <label>
                             Phone number 01
-                            <div className='optionalInput'> - optional</div>
+                            <div className='optional-input'> - optional</div>
                             <input
                                 className="phone-number"
                                 name="phoneNumber"
@@ -181,15 +181,15 @@ class ContactForm extends Component {
                         <label>
                             Company name
                             <input
-                                id="companyName"
+                                id="company-name"
                                 name="companyName"
                                 type="text"
                                 value={this.state.companyName}
                                 onChange={this.handleChange} />
                         </label>
                         <label>
-                            <p className='alignleft'>Message</p>
-                            <div className='alignright' id='msg_max_length'>
+                            <p className="align-left">Message</p>
+                            <div className="align-right" id='msg_max_length'>
                                 Maximum text length is 500 characters
                             </div>
                             <textarea
@@ -199,24 +199,24 @@ class ContactForm extends Component {
                                 value={this.state.message}
                                 onChange={this.handleChange} />
                         </label>
-                        <div className="inlineInputs">
+                        <div className="inline-inputs">
                             <input
-                                id="includeAddressDetails"
+                                id="include-address-details"
                                 name="includeAddressDetails"
                                 type="checkbox"
                                 checked={this.state.includeAddressDetails}
                                 onChange={this.handleChange} />
-                            <label id="addAddressDetails">
+                            <label id="add-address-details">
                                 Add address details
                             </label>
                         </div>
                         {includeAddressDetails &&
                         <div>
-                            <div className='inlineInputs'>
+                            <div className='inline-inputs'>
                                 <label>
                                     Address line 1
                                     <input
-                                    id="addressLine1"
+                                    id="address-line-1"
                                     name="addressLine1"
                                     type="text"
                                     value={this.state.addressLine1}
@@ -224,20 +224,20 @@ class ContactForm extends Component {
                                 </label>
                                 <label>
                                     Address line 2
-                                    <div className='optionalInput'> - optional</div>
+                                    <div className='optional-input'> - optional</div>
                                     <input
-                                    id="addressLine2"
+                                    id="address-line-2"
                                     name="addressLine2"
                                     type="text"
                                     value={this.state.addressLine2}
                                     onChange={this.handleChange} />
                                 </label>
                             </div>
-                            <div className='inlineInputs'>
+                            <div className='inline-inputs'>
                                 <label>
                                     City/Town
                                     <input
-                                    id="cityOrTown"
+                                    id="city-or-town"
                                     name="cityOrTown"
                                     type="text"
                                     value={this.state.city}
@@ -246,7 +246,7 @@ class ContactForm extends Component {
                                 <label>
                                     State/County
                                     <input
-                                    id="stateOrCounty"
+                                    id="state-or-oounty"
                                     name="stateOrCounty"
                                     type="text"
                                     value={this.state.stateOrCounty}
@@ -274,7 +274,7 @@ class ContactForm extends Component {
                         </div>
                         }
                         <button id="form-submit" type="submit">
-                            <img id="icon-submit" className="alignleft" src={iconSubmit} alt=''/>
+                            <img id="icon-submit" className="align-left" src={iconSubmit} alt=''/>
                             <p id="text-submit">Submit</p>
                         </button>
                     </form>
@@ -289,7 +289,7 @@ export default ContactForm
 const PhoneNumberInput = props => (
     <label>
         Phone number 0{props.n}
-        <div className='optionalInput'> - optional</div>
+        <div className='optional-input'> - optional</div>
         <input
             className="phone-number"
             type="text" />

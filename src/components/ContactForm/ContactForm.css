@@ -3,12 +3,12 @@ body {
     color: #323232;
 }
 
-.inlineInputs {
+.inline-inputs {
     display: flex;
     flex-direction: row;
 }
 
-#fullName, #emailAddress, #addressLine1, #addressLine2 {
+#full-name, #email-address, #address-line-1, #address-line-2 {
     height: 40px;
     width: 243px;
     font-size: 100%;
@@ -22,13 +22,7 @@ form input, textarea {
     border-radius: 3px;
 }
 
-.phone-number {
-    height: 40px;
-    width: 510px;
-    font-size: 100%;
-}
-
-#companyName {
+.phone-number, #company-name {
     height: 40px;
     width: 510px;
     font-size: 100%;
@@ -40,15 +34,15 @@ form input, textarea {
     font-size: 100%;
 }
 
-#includeAddressDetails {
+#include-address-details {
     margin: 0px;
 }
 
-#addAddressDetails {
+#add-address-details {
     margin: 10px 20px 10px 10px;
 }
 
-#cityOrTown, #stateOrCounty, #postcode, #country {
+#city-or-town, #state-or-oounty, #postcode, #country {
     height: 40px;
     width: 110px;
 }
@@ -100,16 +94,16 @@ form input, textarea {
     margin-bottom: 10px;
 }
 
-.optionalInput {
+.optional-input {
     display: inline;
     font-style: italic;
     color: grey;
 }
 
-.alignleft {
+.align-left {
 	float: left;
 }
-.alignright {
+.align-right {
 	float: right;
 }
 
