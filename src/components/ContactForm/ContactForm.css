@@ -110,6 +110,7 @@ form input, textarea {
 #msg_max_length {
     color: grey;
     font-size: 10px;
+    margin: 20px 10px 0px 0px;
 }
 
 #form-submit {

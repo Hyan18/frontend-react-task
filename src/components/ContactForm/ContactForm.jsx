@@ -167,9 +167,9 @@ class ContactForm extends Component {
                         </label>
                         <label>
                             <p className='alignleft'>Message</p>
-                            <p className='alignright' id='msg_max_length'>
+                            <div className='alignright' id='msg_max_length'>
                                 Maximum text length is 500 characters
-                            </p>
+                            </div>
                             <textarea
                                 id="message"
                                 name="message"
