@@ -1,0 +1,26 @@
+.footer {
+    width: 1600px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end
+}
+
+.footer-contents {
+    width: 1080px;
+    height: 60px;
+    border-top: 1px solid rgb(221, 220, 220);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #C7C7CA;
+    font-size: 11px;
+}
+
+span {
+    text-decoration:  underline;
+    padding-left: 3px;
+}
