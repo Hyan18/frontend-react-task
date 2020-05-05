@@ -20,16 +20,16 @@ function Navbar () {
                         <a href="/"><img src={Logo} alt=''/></a>
                     </li>
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/">HOME</Link>
                     </li>
                     <li>
-                        <Link to="/about-us">About us</Link>
+                        <Link to="/about-us">ABOUT US</Link>
                     </li>
                     <li>
-                        <Link to="/contact-us">Contact us</Link>
+                        <Link to="/contact-us">CONTACT US</Link>
                     </li>
                     <li>
-                        <Link>Log in</Link>
+                        <button id="log-in">Log in</button>
                     </li>
                 </ul>
             </div>
