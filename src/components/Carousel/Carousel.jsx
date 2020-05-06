@@ -74,7 +74,7 @@ class Carousel extends Component {
                             backgroundSize: 'cover',
                             backgroundRepeat: "no-repeat",
                             backgroundPosition: "center",
-                            backgroundImage: `linear-gradient(to right, rgb(51, 51, 51, 1), rgba(255,0,0,0) 75%), url("${slide.ImageUrl}")`
+                            backgroundImage: `linear-gradient(to right, rgb(0, 0, 0, 1) -5%, rgba(255,0,0,0) 50%), url("${slide.ImageUrl}")`
                         }}>
                             <SlideContent title={slide.Title} subtitle={slide.Subtitle}/>
                         </section>)}
