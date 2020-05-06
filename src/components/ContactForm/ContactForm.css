@@ -114,14 +114,7 @@ form input, textarea {
 }
 
 #form-submit {
-    background-color: #2685C6;
-    border: none;
-    border-radius: 3px;
-    height: 40px;
     width: 520px;
-    color: white;
-    font-weight: bold;
-    margin-top: 20px;
 }
 
 #icon-submit {

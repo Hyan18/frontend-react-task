@@ -275,7 +275,7 @@ class ContactForm extends Component {
                             </div>
                         </div>
                         }
-                        <button id="form-submit" type="submit">
+                        <button id="form-submit" className="dark-blue-button" type="submit">
                             <img id="icon-submit" className="align-left" src={iconSubmit} alt=''/>
                             <p id="text-submit">Submit</p>
                         </button>
