@@ -4,11 +4,11 @@
     border-bottom: 1px solid rgb(221, 220, 220);
 }
 
-img {
+.navbar img {
     height: 25px;
 }
 
-ul {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0px 250px 0px 250px;
@@ -17,11 +17,11 @@ ul {
     display: flex;
 }
 
-ul li:first-child {
+.navbar ul li:first-child {
     margin-right: auto;
 }
 
-li a {
+.navbar li a {
     display: block;
     color: black;
     text-align: center;
@@ -34,7 +34,7 @@ li a {
 
 }
 
-li {
+.navbar li {
     display:flex;
     justify-content:flex-end;
     align-items:center;
