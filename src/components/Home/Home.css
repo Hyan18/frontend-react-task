@@ -62,7 +62,7 @@
 
 #info2-container {
     background-image: url("../../img/shutterstock_1302552622.jpg");
-    background-position: 80% 10%;
+    background-position-y: 10%;
     background-size: 1600px auto;
     height: 425px;
     width: 1600px;
