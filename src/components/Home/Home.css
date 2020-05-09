@@ -2,6 +2,7 @@
     background-color: white;
     height: 1840px;
     width: 1600px;
+    padding-bottom: 60px;
 }
 
 #info1-container {
@@ -107,4 +108,46 @@
     font-weight: bold;
     margin-top: 10px;
     font-size: 11px;
+}
+
+#info3-container {
+    background-color: white;
+    height: 540px;
+    width: 1600px;
+}
+
+#info3 {
+    height: 540px;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#info3-title {
+    margin: 0px;
+}
+
+#info3-subtitle {
+    margin: 5px 0px 20px 0px;
+    font-weight: bold;
+}
+
+#info3-text-container {
+    height: 300px;
+}
+
+#info3-text {
+    height: 300px;
+    column-count: 3;
+    column-width: 350px;
+}
+
+#info3-subtext p {
+    text-align: left;
+}
+
+#opening-paragraph {
+    font-weight: bold;
 }
