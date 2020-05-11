@@ -5,7 +5,7 @@ import officeImg from '../../img/shutterstock_696636415.jpg'
 
 function Home () {
     return (
-        <div className='home-div'>
+        <div className="home-div">
             <Carousel/>
 
             <div id="info1-container">
