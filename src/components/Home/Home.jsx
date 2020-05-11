@@ -34,7 +34,7 @@ function Home () {
                         <button className="dark-blue-button">Learn more</button>
                     </div>
 
-                    <img id="office-img" src={officeImg}/>
+                    <img id="office-img" src={officeImg} alt="office-img"/>
                 </div>
             </div>
 
