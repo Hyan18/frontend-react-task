@@ -6,7 +6,9 @@ function Contact () {
     return (
         <div className='contact-div'>
             <div className='contact-content'>
-                <h3>Contact us</h3>
+                <div id='title'>
+                    Contact us
+                </div>
                 <p>
                 Integer iaculis fringilla consectetur. Vivamus placerat ligula a magna varius maximus. Curabitur nisi elit, eleifend quis augue eu, aliquet luctus nisi. 
                 </p>

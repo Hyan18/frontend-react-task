@@ -1,5 +1,64 @@
 .about-div {
     background-color: white;
-    height: 1840px;
     width: 1600px;
+    padding-bottom: 60px;
 }
+
+#about-content-container {
+    height: 1200px;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title {
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+#about-content-container p {
+    font-size: 11px;
+    margin: 0px 0px 25px 0px;
+}
+
+#subtitle {
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+#img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#about-office-img {
+    height: 400px;
+    width: 600px;
+}
+
+#list-subtitle {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+#about-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: inside;
+}
+
+#about-list {
+    font-size: 8px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+#about-list span {
+    color: #271f1f;
+    font-size: 11px;
+    text-decoration: none;
+    line-height: 25px;
+}
+

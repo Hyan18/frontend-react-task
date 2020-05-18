@@ -1,20 +1,28 @@
-.inlineInputs {
+body {
+    font-size: 12px;
+    color: #323232;
+}
+
+.inline-inputs {
     display: flex;
     flex-direction: row;
 }
 
-#fullName, #emailAddress {
+#full-name, #email-address, #address-line-1, #address-line-2 {
     height: 40px;
-    width: 240px;
+    width: 243px;
     font-size: 100%;
 }
 
 form input, textarea {
     display: block;
     margin: 10px 20px 10px 0px;
+    background-color: #F8F9FC;
+    border: 1px solid #E6E6E6;
+    border-radius: 3px;
 }
 
-#phoneNumber, #companyName {
+.phone-number, #company-name {
     height: 40px;
     width: 510px;
     font-size: 100%;
@@ -26,20 +34,107 @@ form input, textarea {
     font-size: 100%;
 }
 
-#includeAddressDetails {
+#include-address-details {
     margin: 0px;
 }
 
-#addAddressDetails {
+#add-address-details {
     margin: 10px 20px 10px 10px;
 }
 
-#addressLine1, #addressLine2 {
-    height: 40px;
-    width: 240px;
-}
-
-#cityOrTown, #stateOrCounty, #postcode, #country {
+#city-or-town, #state-or-oounty, #postcode, #country {
     height: 40px;
     width: 110px;
+}
+
+.form-success {
+    background-color: #E9F4DA;
+    height: 160px;
+    width: 510px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#success-content {
+    padding-top: 30px;
+}
+
+.circle {
+    background-color: #8EC73D;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+#icon-valid {
+    height: 25px;
+    width: 25px;
+    padding-top: 8px;
+}
+
+#success-title {
+    font-size: 16px;
+}
+
+#success-subtitle {
+    padding-top: 5px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+#errors {
+    background-color: #F2DEDE;
+    border-radius: 5px;
+    padding: 3px 0px 3px 10px;
+    color: rgb(194, 83, 68);
+    margin-bottom: 10px;
+}
+
+.optional-input {
+    display: inline;
+    font-style: italic;
+    color: grey;
+}
+
+.align-left {
+	float: left;
+}
+.align-right {
+	float: right;
+}
+
+#msg_max_length {
+    color: grey;
+    font-size: 10px;
+    margin: 20px 10px 0px 0px;
+}
+
+#form-submit {
+    width: 520px;
+}
+
+#icon-submit {
+    height: 18px;
+    width: 18px;
+    padding: 10px 0px 0px 5px;
+}
+
+#text-submit {
+    font-size: 11px;
+}
+
+#add-phone-number {
+    background-color: #EFF7FF;
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    width: 520px;
+    color: #6597C7;
+    font-weight: bold;
+    font-size: 11px;
+    margin: 10px 0px 20px 0px;
 }

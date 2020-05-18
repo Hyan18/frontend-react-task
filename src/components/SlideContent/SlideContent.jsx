@@ -3,17 +3,17 @@ import './SlideContent.css'
 import PropTypes from 'prop-types'
 
 class SlideContent extends Component {
-    constructor(props) {
-        super(props)
-    }
 
     render () {
         const { title, subtitle } = this.props
 
             return (
                 <div className="slide-content-div">
-                    <h2>{title}</h2>
-                    <p>{subtitle}</p>
+                    <div className="text-content">
+                        <p className="title">{title}</p>
+                        <p className="subtitle">{subtitle}</p>
+                        <button className="dark-blue-button">Contact us</button>
+                    </div>
                 </div>
             )
     }

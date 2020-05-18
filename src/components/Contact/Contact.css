@@ -1,10 +1,24 @@
 .contact-div {
     background-color: white;
-    height: 1840px;
+    height: 900px;
     width: 1600px;
+    background-image: url("../../img/Img_Contact.png");
+    background-repeat: no-repeat;
+    background-position: 75% 120%;
+    background-size: 520px 940px;
 }
 
 .contact-content {
-    padding: 60px 250px 0px 250px;
+    padding: 50px 250px 0px 250px;
     width: 520px;
+}
+
+#title {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 12px;
+    line-height: 20px;
 }
